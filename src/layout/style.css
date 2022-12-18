@@ -1,0 +1,8 @@
+.main{
+    padding-left: 384px;
+    overflow-x: hidden;
+}
+.main__content{
+    min-height: 100vh;
+    transition: all 0.5s ease-in-out;
+}
