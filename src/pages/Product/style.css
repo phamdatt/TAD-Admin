@@ -1,0 +1,8 @@
+.product-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.product-actions--title {
+  color: white;
+  margin-left: 12px;
+}

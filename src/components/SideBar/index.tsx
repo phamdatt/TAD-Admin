@@ -17,7 +17,7 @@ function SideBar() {
     const activeItem = sidebarNav.findIndex((item) => item.url === curPath);
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
   }, [location]);
-
+  
   return (
     <div className="sidebar">
       <div className="sidebar-header">

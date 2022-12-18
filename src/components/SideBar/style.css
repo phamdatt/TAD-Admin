@@ -1,7 +1,7 @@
 .sidebar {
   width: var(--side-bar-width);
   height: 100vh;
-  background-color: #191a22;
+  background-color: #1c1917;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.141);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.141);
   padding: 16px;
 }
 .sidebar-header--logo {
@@ -62,14 +62,14 @@
   border-bottom: 1px solid white;
   padding-bottom: 16px;
 }
-.sidebar-menu--item--icon{
+.sidebar-menu--item--icon {
   margin-right: 32px;
 }
-.sidebar-menu--item:last-child{
+.sidebar-menu--item:last-child {
   margin-top: auto;
   cursor: pointer;
   border: none;
 }
-.sidebar-menu--item:last-child:hover{
+.sidebar-menu--item:last-child:hover {
   color: white;
 }
