@@ -9,7 +9,7 @@ import { useState } from "react";
 import Login from "./pages/Login";
 
 function App() {
-  const [isLogged, setIsLogged] = useState<boolean>(false);
+  const [isLogged, setIsLogged] = useState<boolean>(true);
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

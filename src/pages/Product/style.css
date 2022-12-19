@@ -6,3 +6,10 @@
   color: white;
   margin-left: 12px;
 }
+.grid {
+  position: fixed;
+  left: 400px;
+  bottom: 16px;
+  right: 16px;
+  top: 160px;
+}
