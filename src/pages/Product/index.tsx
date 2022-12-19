@@ -2,7 +2,12 @@ import { DataGrid, GridApi, GridCellValue, GridColDef } from "@mui/x-data-grid";
 import { Button, InputLabel, Modal, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen, faPlus, faTimes, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPen,
+  faPlus,
+  faTimes,
+  faTrashAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 import { useState } from "react";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -90,10 +95,10 @@ export default function Products() {
 
         return (
           <Box style={{ display: "flex" }}>
-            <Button onClick={handleOpen}>
+            <Button onClick={handleOpen} variant="text">
               <FontAwesomeIcon icon={faPen} color="black" />
             </Button>
-            <Button onClick={onClick}>
+            <Button onClick={onClick} variant="text">
               <FontAwesomeIcon icon={faTrashAlt} color="black" />
             </Button>
           </Box>
@@ -110,7 +115,6 @@ export default function Products() {
             marginLeft: "auto",
             marginBottom: 16,
             borderRadius: 8,
-            backgroundColor: "#164e63",
             fontSize: "12px",
             padding: "8px 16px",
           }}
@@ -137,9 +141,20 @@ export default function Products() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Box borderBottom={0.5} borderColor="#164e63" p={2} display="flex" alignItems="center" justifyContent="space-between">
+          <Box
+            borderBottom={0.5}
+            borderColor="#164e63"
+            p={2}
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
+          >
             Thêm sản phẩm
-            <FontAwesomeIcon icon={faTimes} onClick={handleClose} style={{cursor:'pointer'}}/>
+            <FontAwesomeIcon
+              icon={faTimes}
+              onClick={handleClose}
+              style={{ cursor: "pointer" }}
+            />
           </Box>
           <Box p={2}>
             <InputLabel style={{ marginBottom: 8 }}>Tên sản phẩm</InputLabel>
@@ -172,12 +187,6 @@ export default function Products() {
               <Button
                 variant="outlined"
                 style={{
-                  marginBottom: 16,
-                  borderRadius: 8,
-                  fontSize: "12px",
-                  padding: "8px 16px",
-                  border: "1px solid #164e63",
-                  color: "#164e63",
                   width: "100px",
                 }}
                 onClick={handleClose}
@@ -186,16 +195,11 @@ export default function Products() {
                 Huỷ bỏ
               </Button>
               <Button
-                variant="contained"
                 style={{
-                  marginBottom: 16,
-                  borderRadius: 8,
-                  backgroundColor: "#164e63",
-                  fontSize: "12px",
-                  padding: "8px 16px",
                   width: "100px",
                   marginLeft: "12px",
                 }}
+                variant="contained"
                 onClick={handleOpen}
                 size="small"
               >
