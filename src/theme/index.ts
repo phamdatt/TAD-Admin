@@ -34,6 +34,14 @@ const theme = createTheme({
         }),
       },
     },
+    MuiTableHead: {
+      styleOverrides: {
+        root: {
+          backgroundColor: colors.cyan[900],
+          color: "#fff",
+        },
+      },
+    },
   },
 });
 export default theme;

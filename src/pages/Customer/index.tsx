@@ -4,7 +4,7 @@ import { Button, InputLabel, Modal } from "@mui/material";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import TableComponentCustom from "./components/TableCustom";
+import CustomerTableComponentCustom from "./components/index";
 import "./style.css";
 
 const style = {
@@ -18,30 +18,15 @@ const style = {
   borderRadius: 2,
 };
 
-export default function Products() {
+export default function Customer() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div style={{ padding: "16px" }}>
-      <div className="product-actions">
-        <Button
-          variant="contained"
-          style={{
-            marginLeft: "auto",
-            borderRadius: 8,
-            fontSize: "12px",     
-          }}
-          onClick={handleOpen}
-          size="small"
-          startIcon={<FontAwesomeIcon icon={faPlus} size="xs" />}
-        >
-          Add product
-        </Button>
-      </div>
-      <div className="grid">
-        <TableComponentCustom />
+      <div className="grid-customer">
+        <CustomerTableComponentCustom />
       </div>
       <Modal
         open={open}

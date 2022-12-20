@@ -1,6 +1,7 @@
 .product-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .product-actions--title {
   color: white;
@@ -11,5 +12,5 @@
   left: 400px;
   bottom: 16px;
   right: 16px;
-  top: 160px;
+  top: 140px;
 }

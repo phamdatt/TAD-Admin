@@ -38,7 +38,7 @@
 .sidebar-menu .sidebar-menu--item {
   display: flex;
   position: relative;
-  margin-bottom: 2rem;
+  padding: 16px 0;
   transition: color 0.3s ease-in-out;
   text-decoration: none;
   padding-left: 12px;
@@ -53,7 +53,7 @@
 .sidebar-menu .sidebar-menu--item--active {
   display: flex;
   position: relative;
-  margin-bottom: 2rem;
+  padding: 16px 0;
   transition: color 0.3s ease-in-out;
   text-decoration: none;
   padding-left: 12px;
