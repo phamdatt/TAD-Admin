@@ -31,7 +31,7 @@ export default function Products() {
           style={{
             marginLeft: "auto",
             borderRadius: 8,
-            fontSize: "12px",     
+            fontSize: "12px", 
           }}
           onClick={handleOpen}
           size="small"

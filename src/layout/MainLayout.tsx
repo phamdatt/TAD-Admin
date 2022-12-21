@@ -3,7 +3,6 @@ import SideBar from "../components/SideBar";
 import TopBar from "../components/TopBar";
 import "./style.css";
 import { Box } from "@mui/material";
-import { CssBaseline } from "@mui/material";
 
 function MainLayout() {
   return (

@@ -13,7 +13,7 @@ import Settings from "./pages/Settings";
 import theme from "./theme";
 
 function App() {
-  const [isLogged, setIsLogged] = useState<boolean>(true);
+  const [isLogged, _] = useState<boolean>(true);
   const convertTheme = createTheme({
     ...theme,
     palette: {

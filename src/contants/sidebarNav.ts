@@ -1,5 +1,4 @@
-import {   faBlog, faGear, faHome, faReceipt, faTruck, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faCube } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faCube, faGear, faHome, faReceipt, faUser } from '@fortawesome/free-solid-svg-icons';
 
 export const sidebarNav = [
   {
@@ -22,11 +21,6 @@ export const sidebarNav = [
     title: "Orders",
     url: "orders",
   },
-  // {
-  //   icon: faTruck,
-  //   title: "Delivery",
-  //   url: "deliveries",
-  // },
   {
     icon: faBlog,
     title: "Blogs",

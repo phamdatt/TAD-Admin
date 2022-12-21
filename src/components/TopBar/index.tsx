@@ -1,10 +1,10 @@
-import { faBarsStaggered, faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import UserInfo from "../UserInfo";
 import "./style.css";
-import { Box } from "@mui/material";
 
 function TopBar() {
   const location = useLocation();
