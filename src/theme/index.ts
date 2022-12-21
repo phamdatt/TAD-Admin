@@ -6,8 +6,9 @@ const theme = createTheme({
       main: colors.cyan[900],
       contrastText: "#fff",
     },
+    mode: "light",
   },
-  
+
   components: {
     MuiButton: {
       defaultProps: {
