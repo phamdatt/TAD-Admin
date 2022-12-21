@@ -22,11 +22,11 @@ export const sidebarNav = [
     title: "Orders",
     url: "orders",
   },
-  {
-    icon: faTruck,
-    title: "Delivery",
-    url: "deliveries",
-  },
+  // {
+  //   icon: faTruck,
+  //   title: "Delivery",
+  //   url: "deliveries",
+  // },
   {
     icon: faBlog,
     title: "Blogs",

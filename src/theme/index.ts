@@ -7,6 +7,7 @@ const theme = createTheme({
       contrastText: "#fff",
     },
   },
+  
   components: {
     MuiButton: {
       defaultProps: {

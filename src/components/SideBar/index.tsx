@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { Box } from "@mui/material";
 
 function SideBar() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -19,7 +20,7 @@ function SideBar() {
   }, [location]);
   
   return (
-    <div className="sidebar">
+    <Box className="sidebar">
       <div className="sidebar-header">
         <img src={images.logo} alt="" className="sidebar-header--logo" />
         <p className="sidebar-header--title">Tad Clothes</p>
@@ -46,7 +47,7 @@ function SideBar() {
           <div className="sidebar-menu--item--title">Logout</div>
         </div>
       </div>
-    </div>
+    </Box>
   );
 }
 export default SideBar;
