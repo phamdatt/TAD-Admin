@@ -3,7 +3,7 @@ import { faBlog, faCube, faGear, faHome, faReceipt, faUser } from '@fortawesome/
 export const sidebarNav = [
   {
     icon: faHome,
-    title: "Home",
+    title: "Dashboard",
     url: "/",
   },
   {

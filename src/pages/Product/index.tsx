@@ -13,7 +13,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 500,
-  bgcolor: "white",
+  bgcolor: "black",
   border: "1px solid #eee",
   borderRadius: 2,
 };
@@ -24,14 +24,14 @@ export default function Products() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div style={{ padding: "16px" }}>
-      <div className="product-actions">
+    <Box style={{ padding: "16px" }}>
+      <Box className="product-actions">
         <Button
           variant="contained"
           style={{
             marginLeft: "auto",
             borderRadius: 8,
-            fontSize: "12px", 
+            fontSize: "12px",
           }}
           onClick={handleOpen}
           size="small"
@@ -39,10 +39,10 @@ export default function Products() {
         >
           Add product
         </Button>
-      </div>
-      <div className="grid">
+      </Box>
+      <Box className="grid">
         <TableComponentCustom />
-      </div>
+      </Box>
       <Modal
         open={open}
         onClose={handleClose}
@@ -118,6 +118,6 @@ export default function Products() {
           </Box>
         </Box>
       </Modal>
-    </div>
+    </Box>
   );
 }

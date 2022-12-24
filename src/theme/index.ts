@@ -44,6 +44,18 @@ const theme = createTheme({
         },
       },
     },
+    MuiLink: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "dark" && {
+            color: "white",
+          }),
+          ...(theme.palette.mode === "light" && {
+            color: "black",
+          }),
+        }),
+      },
+    },
   },
 });
 export default theme;

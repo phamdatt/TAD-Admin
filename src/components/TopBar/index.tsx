@@ -14,7 +14,7 @@ function TopBar() {
     //@ts-ignore
     const curPath = window.location.pathname.split("/")[1];
     if (!curPath) {
-      setNameTopBar("Home");
+      setNameTopBar("Dashboard");
     } else {
       let name = curPath.charAt(0).toUpperCase() + curPath.substring(1);
       setNameTopBar(name);

@@ -1,14 +1,17 @@
 import {
   CssBaseline,
   PaletteMode,
-  ThemeOptions,
   ThemeProvider,
   createTheme,
 } from "@mui/material";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { darkTheme, lightTheme } from "./contants/configTheme";
+import { localStorageKeys } from "./contants/localStorageKeys";
 import { ColorSchemeContext } from "./context/ThemeContext";
+import { loader } from "./helper/loader";
+import { getData } from "./helper/localStorage";
 import MainLayout from "./layout/MainLayout";
 import Blogs from "./pages/Blogs";
 import Customer from "./pages/Customer";
@@ -17,38 +20,28 @@ import Login from "./pages/Login";
 import Orders from "./pages/Orders/index";
 import Products from "./pages/Product";
 import Settings from "./pages/Settings";
-import theme from "./theme";
-
-export const darkTheme: ThemeOptions = {
-  ...theme,
-  palette: {
-    mode: "dark",
-  },
-};
-export const lightTheme: ThemeOptions = {
-  ...theme,
-  palette: {
-    mode: "light",
-  },
-};
 
 function App() {
   const [isLogged, _] = useState<boolean>(true);
-  const [mode, setMode] = useState<PaletteMode>("light");
+  const [mode, setMode] = useState<PaletteMode>(
+    getData(localStorageKeys.MODE) ?? "light"
+  );
 
   const colorMode = useMemo(() => {
     return {
       toggleMode: () => {
-        setMode((prevMode: PaletteMode) =>
-          prevMode === "light" ? "dark" : "light"
-        );
+        setMode(mode === "light" ? "dark" : "light");
       },
     };
-  }, []);
+  }, [mode]);
 
   const theme = useMemo(() => {
     return createTheme(mode === "light" ? lightTheme : darkTheme);
   }, [mode]);
+
+  useEffect(() => {
+    loader();
+  }, []);
 
   return (
     <ColorSchemeContext.Provider value={colorMode}>

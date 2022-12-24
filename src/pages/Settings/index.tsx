@@ -1,12 +1,23 @@
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Box, Switch, Typography } from "@mui/material";
-import React from "react";
+import React, { useMemo } from "react";
+import { localStorageKeys } from "../../contants/localStorageKeys";
 import { ColorSchemeContext } from "../../context/ThemeContext";
+import { getData, saveData } from "../../helper/localStorage";
 import colors from "../../theme/colors";
 
 const Settings = () => {
   const { toggleMode } = React.useContext(ColorSchemeContext);
+  const MODE = getData(localStorageKeys.MODE);
+  const handleChangeMode = () => {
+    toggleMode();
+    saveData(localStorageKeys.MODE, MODE === "light" ? "dark" : "light");
+  };
+  const isChecked = useMemo(() => {
+    return MODE === "light";
+  }, [MODE]);
+
   return (
     <Box
       sx={{
@@ -38,7 +49,8 @@ const Settings = () => {
             sx={{
               marginLeft: "auto",
             }}
-            onChange={toggleMode}
+            onChange={handleChangeMode}
+            checked={isChecked}
           />
         </Box>
       </Box>
