@@ -1,22 +1,22 @@
-.top-bar{
-    padding:16px 16px;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+.top-bar {
+  padding: 10px 16px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
 }
-.top-bar-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.top-bar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.top-bar-title{
-    margin-left: 12px;
-    font-size: 14px;
-    font-weight: bold;
+.top-bar-title {
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
-.user-info{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+.user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
-.icon-bell{
-    position: relative;
+.icon-bell {
+  position: relative;
 }

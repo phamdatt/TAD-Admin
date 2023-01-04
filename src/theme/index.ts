@@ -56,6 +56,18 @@ const theme = createTheme({
         }),
       },
     },
+    MuiTypography:{
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "light" && {
+            color: "white",
+          }),
+          ...(theme.palette.mode === "dark" && {
+            color: "black",
+          }),
+        }),
+      },
+    }
   },
 });
 export default theme;

@@ -1,4 +1,4 @@
-import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faBellSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
@@ -27,7 +27,7 @@ function TopBar() {
         <Box className="top-bar-title">{nameTopBar}</Box>
         <Box className="user-info">
           <Box className="icon-bell">
-            <FontAwesomeIcon icon={faBell} />
+            <FontAwesomeIcon icon={faBell}/>
           </Box>
           <UserInfo />
         </Box>

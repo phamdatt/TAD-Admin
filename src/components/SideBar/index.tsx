@@ -24,11 +24,7 @@ function SideBar() {
   function CustomLink(props: any) {
     const { to, children, ...restProps } = props;
     return (
-      <Box
-        sx={{
-          textDecoration: "none",
-        }}
-      >
+      <Box>
         <LinkRouter to={to} {...restProps}>
           {children}
         </LinkRouter>
@@ -57,20 +53,27 @@ function SideBar() {
                 color: MODE === "dark" ? "white" : "black",
               }}
             >
-              <FontAwesomeIcon
-                icon={itemNav.icon}
-                className="sidebar-menu--item--icon"
-              />
-
-              <Box className="sidebar-menu--item--title">{itemNav.title}</Box>
+              <Typography>
+                <FontAwesomeIcon
+                  icon={itemNav.icon}
+                  className="sidebar-menu--item--icon"
+                />
+              </Typography>
+              <Box className="sidebar-menu--item--title">
+                <Typography>{itemNav.title}</Typography>
+              </Box>
             </CustomLink>
           );
         })}
         <Box className="sidebar-menu--item">
           <Box className="sidebar-menu--item--icon">
-            <FontAwesomeIcon icon={faArrowLeftLong} />
+            <Typography>
+              <FontAwesomeIcon icon={faArrowLeftLong} />
+            </Typography>
           </Box>
-          <Box className="sidebar-menu--item--title">Logout</Box>
+          <Box className="sidebar-menu--item--title">
+            <Typography>Logout</Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
