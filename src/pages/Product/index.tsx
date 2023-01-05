@@ -24,7 +24,11 @@ export default function Products() {
   const handleClose = () => setOpen(false);
 
   return (
-    <Box style={{ padding: "16px" }}>
+    <Box
+      sx={{
+        padding: 4,
+      }}
+    >
       <Box className="product-actions">
         <Button
           variant="contained"

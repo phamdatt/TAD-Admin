@@ -63,7 +63,47 @@ const theme = createTheme({
             color: "white",
           }),
           ...(theme.palette.mode === "dark" && {
-            color: "black",
+            color: "white",
+          }),
+        }),
+      },
+    },
+    MuiTableRow:{
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "light" && {
+          }),
+          ...(theme.palette.mode === "dark" && {
+            backgroundColor:'rgb(40 51 78)',
+            color: "white",
+          }),
+        }),
+      },
+    },
+    MuiTableCell:{
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "light" && {
+            
+            color: "white",
+          }),
+          ...(theme.palette.mode === "dark" && {
+            backgroundColor:'rgb(40 51 78)',
+            color: "white",
+          }),
+        }),
+      },
+    },
+    MuiTablePagination:{
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "light" && {
+            
+            color: "white",
+          }),
+          ...(theme.palette.mode === "dark" && {
+            backgroundColor:'rgb(40 51 78)',
+            color: "white",
           }),
         }),
       },

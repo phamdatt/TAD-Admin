@@ -1,7 +1,7 @@
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Box, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link as LinkRouter, useLocation } from "react-router-dom";
 import { images } from "../../contants/images";
 import { localStorageKeys } from "../../contants/localStorageKeys";
@@ -32,8 +32,11 @@ function SideBar() {
     );
   }
 
+  const isChecked = useMemo(() => {
+    return MODE === "light";
+  }, [MODE]);
   return (
-    <Box className="sidebar">
+    <Box className={`sidebar ${isChecked ? "sidebar" : "sidebarDark"}`}>
       <Box className="sidebar-header">
         <img src={images.logo} alt="" className="sidebar-header--logo" />
         <Typography className="sidebar-header--title">Tad Clothes</Typography>

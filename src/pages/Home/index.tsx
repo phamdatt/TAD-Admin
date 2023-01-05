@@ -39,7 +39,7 @@ const Home = () => {
     >
       <Box
         sx={{
-          backgroundColor: teal[100],
+          backgroundColor: 'rgb(40 51 78)',
           borderRadius: 4,
           display: "flex",
           padding: 4,     
@@ -70,7 +70,7 @@ const Home = () => {
                   height: 150,
                   textAlign: "center",
                   position: "relative",
-                  boxShadow: `0 1px 5px ${grey[500]}`,
+                  boxShadow: `0 10px 45px rgba(0,0,0,0.15)}`,
                 }}
               >
                 <Typography>{item.title}</Typography>

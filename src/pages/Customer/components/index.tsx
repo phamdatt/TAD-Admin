@@ -207,8 +207,6 @@ export default function TableComponentCustom() {
                   align={column.align}
                   style={{
                     minWidth: column.minWidth,
-                    backgroundColor: colors.cyan[900],
-                    color: "#fff",
                   }}
                 >
                   {column.label}
