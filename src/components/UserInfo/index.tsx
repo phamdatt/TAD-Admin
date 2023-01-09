@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import "./style.css";
 import { images } from "../../contants/images";
+import "./style.css";
 
 function UserInfo(props: { handleShowUserInfo: () => void }) {
   const { handleShowUserInfo } = props;

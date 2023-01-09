@@ -10,7 +10,6 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import * as React from "react";
-import colors from "../../../../theme/colors";
 import "./style.css";
 
 interface Column {
@@ -197,7 +196,22 @@ export default function TableComponentCustom() {
 
   return (
     <Paper sx={{ width: "100%", overflow: "hidden", height: "100%" }}>
-      <TableContainer sx={{ maxHeight: "90%" }}>
+      <TableContainer
+        sx={{
+          maxHeight: "90%",
+          "&::-webkit-scrollbar": {
+            width: `10px`,
+          },
+          "&::-webkit-scrollbar-track": {
+            backgroundColor: "#ffffff0d",
+            borderRadius: 2,
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "#ffffff0d",
+            borderRadius: 2,
+          },
+        }}
+      >
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>

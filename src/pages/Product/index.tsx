@@ -13,9 +13,10 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 500,
-  bgcolor: "black",
-  border: "1px solid #eee",
+  bgcolor: "rgb(40 51 78)",
+  border: "1px solid #rgb(40 51 78)",
   borderRadius: 2,
+  color: "#CAD4E0",
 };
 
 export default function Products() {
@@ -56,7 +57,7 @@ export default function Products() {
         <Box sx={style}>
           <Box
             borderBottom={0.5}
-            borderColor="#164e63"
+            borderColor="#CAD4E0"
             p={2}
             display="flex"
             alignItems="center"

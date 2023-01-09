@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 import colors from "./colors";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -18,18 +19,18 @@ const theme = createTheme({
         root: ({ ownerState }) => ({
           ...(ownerState.variant === "contained" &&
             ownerState.color === "primary" && {
-              backgroundColor: colors.cyan[900],
+              backgroundColor: "rgb(40 51 78)",
               borderRadius: 8,
               padding: "8px 16px",
-              color: "#fff",
+              color: "#CAD4E0",
               "&:hover": {
-                backgroundColor: "#155e75",
+                backgroundColor: "rgb(40 51 78)",
               },
             }),
           ...(ownerState.variant === "outlined" && {
-            backgroundColor: "#fff",
+            backgroundColor: "#CAD4E0",
             border: `1px solid ${colors.cyan[900]}`,
-            color: colors.cyan[900],
+            color: "#CAD4E0",
             padding: "8px 16px",
             borderRadius: 8,
           }),
@@ -40,7 +41,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: colors.cyan[900],
-          color: "#fff",
+          color: "#CAD4E0",
         },
       },
     },
@@ -48,7 +49,7 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "dark" && {
-            color: "white",
+            color: "#CAD4E0",
           }),
           ...(theme.palette.mode === "light" && {
             color: "black",
@@ -60,10 +61,10 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "light" && {
-            color: "white",
+            color: "#CAD4E0",
           }),
           ...(theme.palette.mode === "dark" && {
-            color: "white",
+            color: "#CAD4E0",
           }),
         }),
       },
@@ -74,7 +75,7 @@ const theme = createTheme({
           ...(theme.palette.mode === "light" && {}),
           ...(theme.palette.mode === "dark" && {
             backgroundColor: "rgb(40 51 78)",
-            color: "white",
+            color: "#CAD4E0",
           }),
         }),
       },
@@ -83,11 +84,11 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "light" && {
-            color: "white",
+            color: "#CAD4E0",
           }),
           ...(theme.palette.mode === "dark" && {
             backgroundColor: "rgb(40 51 78)",
-            color: "white",
+            color: "#CAD4E0",
             borderBottom: "1px solid #ffffff0d",
           }),
         }),
@@ -97,11 +98,11 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "light" && {
-            color: "white",
+            color: "#CAD4E0",
           }),
           ...(theme.palette.mode === "dark" && {
             backgroundColor: "rgb(40 51 78)",
-            color: "white",
+            color: "#CAD4E0",
           }),
         }),
       },

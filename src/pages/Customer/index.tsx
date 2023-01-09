@@ -1,4 +1,4 @@
-import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, InputLabel, Modal } from "@mui/material";
 import OutlinedInput from "@mui/material/OutlinedInput";

@@ -1,7 +1,6 @@
-import { Button, Typography, TextField } from "@mui/material";
-import "./style.css";
+import { Button, TextField, Typography } from "@mui/material";
 import colors from "../../theme/colors";
-import { redirect } from "react-router-dom";
+import "./style.css";
 
 function Login() {
   return (

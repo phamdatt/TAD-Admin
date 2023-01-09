@@ -6,10 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Box, Typography } from "@mui/material";
+import { useState } from "react";
 import UserInfo from "../UserInfo";
 import "./style.css";
-import { useState } from "react";
-import { grey, red } from "@mui/material/colors";
 
 function TopBar() {
   const [visible, setVisible] = useState<boolean>(false);
