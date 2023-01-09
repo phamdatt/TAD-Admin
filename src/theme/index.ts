@@ -56,7 +56,7 @@ const theme = createTheme({
         }),
       },
     },
-    MuiTypography:{
+    MuiTypography: {
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "light" && {
@@ -68,46 +68,55 @@ const theme = createTheme({
         }),
       },
     },
-    MuiTableRow:{
+    MuiTableRow: {
       styleOverrides: {
         root: ({ theme }) => ({
-          ...(theme.palette.mode === "light" && {
-          }),
+          ...(theme.palette.mode === "light" && {}),
           ...(theme.palette.mode === "dark" && {
-            backgroundColor:'rgb(40 51 78)',
+            backgroundColor: "rgb(40 51 78)",
             color: "white",
           }),
         }),
       },
     },
-    MuiTableCell:{
+    MuiTableCell: {
       styleOverrides: {
         root: ({ theme }) => ({
           ...(theme.palette.mode === "light" && {
-            
             color: "white",
           }),
           ...(theme.palette.mode === "dark" && {
-            backgroundColor:'rgb(40 51 78)',
+            backgroundColor: "rgb(40 51 78)",
+            color: "white",
+            borderBottom: "1px solid #ffffff0d",
+          }),
+        }),
+      },
+    },
+    MuiTablePagination: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === "light" && {
+            color: "white",
+          }),
+          ...(theme.palette.mode === "dark" && {
+            backgroundColor: "rgb(40 51 78)",
             color: "white",
           }),
         }),
       },
     },
-    MuiTablePagination:{
+    MuiPaper: {
       styleOverrides: {
         root: ({ theme }) => ({
-          ...(theme.palette.mode === "light" && {
-            
-            color: "white",
-          }),
+          ...(theme.palette.mode === "light" && {}),
           ...(theme.palette.mode === "dark" && {
-            backgroundColor:'rgb(40 51 78)',
-            color: "white",
+            backgroundImage: "none",
+            backgroundColor: "rgb(40 51 78)",
           }),
         }),
       },
-    }
+    },
   },
 });
 export default theme;

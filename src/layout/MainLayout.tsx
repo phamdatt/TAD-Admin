@@ -17,7 +17,6 @@ function MainLayout() {
     <Box>
       <SideBar />
       <Box className="main">
-       
         <Box className="main__content" sx={{
            backgroundColor: isChecked ? "white" : "rgb(35,45,69)",
         }}>

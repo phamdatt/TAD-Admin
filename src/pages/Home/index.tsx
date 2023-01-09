@@ -35,14 +35,15 @@ const Home = () => {
         paddingTop: 2,
         paddingBottom: 2,
         position: "relative",
+        top: 500,
       }}
     >
       <Box
         sx={{
-          backgroundColor: 'rgb(40 51 78)',
+          backgroundColor: "rgb(40 51 78)",
           borderRadius: 4,
           display: "flex",
-          padding: 4,     
+          padding: 4,
         }}
       >
         <Box>
@@ -54,14 +55,14 @@ const Home = () => {
         <Box
           sx={{
             marginLeft: "auto",
-            display: "flex"
+            display: "flex",
           }}
         >
           {social.map((item) => {
             return (
               <Box
                 sx={{
-                  backgroundColor: "white",
+                  backgroundColor: "rgb(40 51 78)",
                   paddingTop: 4,
                   paddingBottom: 4,
                   borderRadius: 4,
@@ -70,7 +71,7 @@ const Home = () => {
                   height: 150,
                   textAlign: "center",
                   position: "relative",
-                  boxShadow: `0 10px 45px rgba(0,0,0,0.15)}`,
+                  boxShadow: `0px 2px 8px rgba(0,0,0,0.15)}`,
                 }}
               >
                 <Typography>{item.title}</Typography>
